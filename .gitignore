@@ -1,7 +1,14 @@
 # OS
 .DS_Store
 Thumbs.db
+desktop.ini
 
 # Editor
 .idea/
 .vscode/
+*.suo
+*.swp
+
+# Temp
+*.tmp
+*.log
