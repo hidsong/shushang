@@ -1,643 +1,575 @@
 <!doctype html>
-<html lang="zh-CN" data-theme="light">
+<html lang="zh-CN">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>服务体系 · 数商</title>
-  <meta name="description" content="数商服务体系：数据合法性审查、数据脱敏与风险防控三大板块，五项审查内容、五步标准化流程、三类审查报告，参考报价与 SLA 服务时限一并公开。">
-  <script>
-    try {
-      var t = localStorage.getItem("shushang-theme");
-      document.documentElement.setAttribute("data-theme", t || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"));
-    } catch (e) {}
-  </script>
+  <title>业务领域 · 数商</title>
+  <meta name="description" content="数商的业务领域：数据合法性审查、数据脱敏、风险监测与应急处置。五项审查内容、五步流程、三类报告、五类脱敏技术、服务时效与参考报价。">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/editorial.css">
 </head>
 <body>
 
-  <header class="header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="数商首页">
-        <span class="brand-mark" aria-hidden="true">
+  <div class="util">
+    <div class="wrap">
+      <div class="left">
+        <span>哈尔滨商业大学 · 学生创业项目</span>
+        <span>2025 年 7 月立项</span>
+      </div>
+      <div class="right">试点阶段 · 尚未正式对外营业</div>
+    </div>
+  </div>
+
+  <header class="masthead">
+    <div class="wrap">
+      <a class="logo" href="index.html">
+        <span class="logo-mark">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
             <path d="M12 3 5 6v5.5c0 4.3 2.9 7.9 7 9.5 4.1-1.6 7-5.2 7-9.5V6l-7-3Z"/>
             <path d="M9.2 12.2l1.9 1.9 3.8-3.9"/>
           </svg>
         </span>
-        <span class="brand-text">数商<em>DATA COMPLIANCE</em></span>
+        <span>
+          <span class="logo-name">数商</span>
+          <span class="logo-sub">SHUSHANG · DATA COMPLIANCE</span>
+        </span>
       </a>
 
-      <nav class="nav" aria-label="主导航">
+      <nav class="mainnav" id="mainnav">
         <a href="index.html">首页</a>
-        <a href="services.html">服务体系</a>
-        <a href="technology.html">技术方案</a>
+        <a href="services.html" class="active">业务领域</a>
+        <a href="technology.html">技术</a>
+        <a href="research.html">资料</a>
         <a href="check.html">合规自测</a>
-        <a href="about.html">关于我们</a>
-        <a href="contact.html">联系我们</a>
+        <a href="about.html">团队</a>
+        <a href="contact.html">联系</a>
       </nav>
 
-      <div class="header-actions">
-        <button class="icon-btn" type="button" data-theme-toggle aria-label="切换主题">
-          <svg class="theme-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
-            <circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>
-          </svg>
-          <svg class="theme-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a6.6 6.6 0 0 0 9.8 9.8Z"/>
-          </svg>
-        </button>
-        <a class="btn btn--primary btn--sm" href="check.html">免费合规体检</a>
-        <button class="icon-btn nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-label="打开菜单">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
-            <path d="M4 7h16M4 12h16M4 17h16"/>
-          </svg>
-        </button>
+      <div class="contact">
+        <strong><span class="ph">电话待填写</span></strong>
+        工作日上午 9:00 – 18:00
       </div>
+
+      <button class="nav-toggle" type="button" aria-label="打开菜单" aria-expanded="false" onclick="var n=document.getElementById('mainnav');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
     </div>
   </header>
 
   <main>
-
-    <!-- 页面小英雄 -->
-    <section class="page-hero">
-      <div class="container">
-        <div class="breadcrumb"><a href="index.html">首页</a><span>/</span><span>服务体系</span></div>
-        <h1>服务体系</h1>
-        <p class="lead">三大服务板块覆盖数据合规全流程：先审查摸清底数，再脱敏守住数据，最后把监测与应急变成日常能力。模块可以单独采购，也能组合成年度合规管家。</p>
+    <section class="banner img-docs">
+      <div class="wrap">
+        <h1>业务领域</h1>
+        <p>三项服务：先审查摸清数据在哪里、从哪里来，再处理敏感字段，最后把异常监测和应急处置变成日常动作。可以单独采购，也可以打包成年费。</p>
       </div>
     </section>
 
-    <!-- 服务概览 -->
-    <section class="section">
-      <div class="container">
-        <div class="section-head">
-          <span class="eyebrow">服务矩阵</span>
-          <h2>三块服务，按需组合</h2>
-          <p class="lead">我们不做厚而空的咨询报告，而是把服务拆成可验收的动作、可量化的结果和说得清的价格，让中小企业第一次能把合规预算算明白。</p>
-        </div>
-        <div class="grid grid--3">
-          <article class="card card--hover" data-reveal>
-            <div class="card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8l-5-5Z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h4"/></svg>
-            </div>
-            <span class="card-index">01 / 审查</span>
-            <h3 class="mt-24">数据合法性审查</h3>
-            <p>从数据资产盘点、来源合法性到个人信息保护与跨境传输，把企业的数据处理活动逐项对照法规，输出风险清单与整改路线图。</p>
-            <ul class="list-check mt-24">
-              <li>五项审查内容，覆盖数据全生命周期</li>
-              <li>五步标准化流程，每一步都有交付物</li>
-              <li>基础报告 5 个工作日内交付</li>
-            </ul>
-            <a class="card-link" href="#review">查看审查服务
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </a>
-          </article>
+    <div class="wrap">
+      <div class="crumb"><a href="index.html">首页</a> / 业务领域</div>
+    </div>
 
-          <article class="card card--hover" data-reveal>
-            <div class="card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3l18 18"/><path d="M10.6 6.2A9.7 9.7 0 0 1 12 6c6.5 0 10 6 10 6a17.6 17.6 0 0 1-3.3 3.9"/><path d="M6.2 7.6C3.8 9.2 2 12 2 12s3.5 6 10 6a10.6 10.6 0 0 0 4.2-.9"/><path d="M9.9 10.1a3 3 0 0 0 4.1 4.2"/></svg>
-            </div>
-            <span class="card-index">02 / 脱敏</span>
-            <h3 class="mt-24">数据脱敏技术服务</h3>
-            <p>按数据类型与使用场景组合掩码、泛化、扰动、加密与差分隐私，让敏感字段「可用不可见」，脱敏后数据可用性保持在 90% 以上。</p>
-            <ul class="list-check mt-24">
-              <li>五类脱敏技术，按场景选型</li>
-              <li>自动识别 + 人工复审双保险</li>
-              <li>处理过程全程留痕，可审计可追溯</li>
-            </ul>
-            <a class="card-link" href="#masking">查看脱敏服务
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </a>
-          </article>
+    <!-- 服务总览 -->
+    <section class="part" id="services">
+      <div class="wrap">
+        <div class="part-label">服务总览<span>SERVICES</span></div>
+        <div>
+          <h2>三项服务，按需采购</h2>
+          <p class="lead">每一项都写清做什么、交什么、多久。价格按工作量计算，签约前提供书面报价和交付清单，不签空白合同。</p>
 
-          <article class="card card--hover" data-reveal>
-            <div class="card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h3.5l2.5-7 4 14 2.5-7H21"/></svg>
-            </div>
-            <span class="card-index">03 / 风控</span>
-            <h3 class="mt-24">风险防控与合规治理</h3>
-            <p>7×24 小时动态监测、分级预警、1 小时应急处置，配套制度、培训、审计与认证辅导，把一次性的合规项目变成日常能力。</p>
-            <ul class="list-check mt-24">
-              <li>异常行为识别与 30 分钟预警</li>
-              <li>1 小时内启动应急处置</li>
-              <li>制度、培训、审计闭环落地</li>
-            </ul>
-            <a class="card-link" href="#risk">查看风控服务
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </a>
-          </article>
+          <div class="areas">
+            <article class="area">
+              <span class="no">01</span>
+              <div>
+                <h3>数据合法性审查</h3>
+                <p>数据资产盘点、来源合法性、处理合规性、个人信息保护、数据出境，五项逐条对照法规，指出问题并给出整改办法。</p>
+                <a class="more" href="#review">审查内容与流程 →</a>
+              </div>
+              <div class="deliver">
+                <b>交付物</b>
+                审查报告（15–50 页）、问题清单、整改建议
+                <br><b>周期</b>
+                5–10 个工作日
+              </div>
+            </article>
+
+            <article class="area">
+              <span class="no">02</span>
+              <div>
+                <h3>数据脱敏</h3>
+                <p>身份证号、手机号、住址、银行卡号这类字段，按使用场景做掩码、泛化、扰动或加密，处理过程留日志。</p>
+                <a class="more" href="#masking">脱敏技术与流程 →</a>
+              </div>
+              <div class="deliver">
+                <b>交付物</b>
+                脱敏后的数据、字段清单、处理日志
+                <br><b>周期</b>
+                3–7 个工作日
+              </div>
+            </article>
+
+            <article class="area">
+              <span class="no">03</span>
+              <div>
+                <h3>风险监测与应急处置</h3>
+                <p>监测数据访问行为，批量导出、非工作时间访问、越权访问等触发告警；发生事件时按预案隔离、取证、恢复。</p>
+                <a class="more" href="#risk">监测与处置说明 →</a>
+              </div>
+              <div class="deliver">
+                <b>交付物</b>
+                监测规则、告警通道、处置记录
+                <br><b>周期</b>
+                按月或按年
+              </div>
+            </article>
+          </div>
+
+          <div class="trio" style="margin-top:40px;">
+            <figure>
+              <img src="assets/img/docs.jpg" alt="笔记本电脑与手写笔记，团队在逐项核对数据记录" loading="lazy">
+              <figcaption><b>审查</b>对照法规逐条核查，报告可直接交给管理层和监管部门。</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/img/server.jpg" alt="机房中带密集线缆的服务器机柜" loading="lazy">
+              <figcaption><b>脱敏</b>敏感字段处理后再出库，每次操作都有日志。</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/img/meeting.jpg" alt="团队在办公室会议桌前讨论" loading="lazy">
+              <figcaption><b>监测</b>异常访问触发告警，1 小时内有人接手处置。</figcaption>
+            </figure>
+          </div>
         </div>
       </div>
+    </section>
+
+    <!-- 大图条 -->
+    <section class="band">
+      <img src="assets/img/building.jpg" alt="仰视城市中的高层办公楼群" loading="lazy">
+      <figcaption>项目在哈尔滨商业大学孵化，服务对象是哈尔滨及周边城市的中小企业</figcaption>
     </section>
 
     <!-- 数据合法性审查 -->
-    <section class="section section--alt" id="review">
-      <div class="container">
-        <div class="section-head">
-          <span class="eyebrow">01 / 数据合法性审查</span>
+    <section class="part paper" id="review">
+      <div class="wrap">
+        <div class="part-label">审查<span>REVIEW</span></div>
+        <div>
           <h2>先摸清家底，再谈合规</h2>
           <p class="lead">很多企业不是不想合规，而是说不清数据在哪儿、从哪儿来、被谁看过。审查的第一步不是写报告，是把这本账理清楚。</p>
-        </div>
 
-        <h2>五项审查内容</h2>
-        <div class="grid grid--3 mt-24">
-          <article class="card card--hover" data-reveal>
-            <div class="card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5.5" rx="7.5" ry="2.8"/><path d="M4.5 5.5v13c0 1.6 3.4 2.8 7.5 2.8s7.5-1.2 7.5-2.8v-13"/><path d="M4.5 12c0 1.6 3.4 2.8 7.5 2.8s7.5-1.2 7.5-2.8"/></svg>
-            </div>
-            <span class="card-index">01</span>
-            <h3 class="mt-24">数据资产盘点</h3>
-            <p>梳理数据类型、来源、规模、存储位置与使用场景，建立可维护的数据资产清单，为后续分类分级与确权打好底。</p>
-          </article>
-          <article class="card card--hover" data-reveal>
-            <div class="card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7 0l2-2a5 5 0 0 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7 0l-2 2a5 5 0 0 0 7 7l1-1"/></svg>
-            </div>
-            <span class="card-index">02</span>
-            <h3 class="mt-24">数据来源合法性</h3>
-            <p>核查数据的采集渠道与获取方式：是否取得用户知情同意、是否存在过度采集、是否存在非法获取或爬取。</p>
-          </article>
-          <article class="card card--hover" data-reveal>
-            <div class="card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="7" width="10" height="10" rx="2"/><path d="M10 3v4M14 3v4M10 17v4M14 17v4M3 10h4M3 14h4M17 10h4M17 14h4"/></svg>
-            </div>
-            <span class="card-index">03</span>
-            <h3 class="mt-24">数据处理合规性</h3>
-            <p>审视存储、使用、传输、共享、删除等处理环节：目的是否明确合理、方式是否安全可靠、范围是否超出必要限度。</p>
-          </article>
-          <article class="card card--hover" data-reveal>
-            <div class="card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 20a5.5 5.5 0 0 1 11 0"/><path d="m16 11.5 1.8 1.8 3.2-3.3"/></svg>
-            </div>
-            <span class="card-index">04</span>
-            <h3 class="mt-24">个人信息保护</h3>
-            <p>对照《个人信息保护法》，检查隐私政策是否完善、用户同意是否有效、分类分级是否准确、敏感个人信息保护是否到位。</p>
-          </article>
-          <article class="card card--hover" data-reveal>
-            <div class="card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.5 2.4 4 5.6 4 9s-1.5 6.6-4 9c-2.5-2.4-4-5.6-4-9s1.5-6.6 4-9Z"/></svg>
-            </div>
-            <span class="card-index">05</span>
-            <h3 class="mt-24">数据跨境传输</h3>
-            <p>识别数据出境场景与数据类型，评估出境路径、安全评估与标准合同的适用性，先理清哪些数据可以出境。</p>
-          </article>
-        </div>
+          <h2 style="margin-top:48px;">五项审查内容</h2>
+          <table class="data-table">
+            <thead>
+              <tr><th>序号</th><th>审查内容</th><th>主要看什么</th><th>我们要的结果</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>数据资产盘点</td>
+                <td>数据类型、来源、规模、存储位置与使用场景</td>
+                <td>一份可维护的数据资产清单</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>数据来源合法性</td>
+                <td>采集渠道、用户知情同意、是否存在过度采集或非法爬取</td>
+                <td>来源合规结论与高风险来源清单</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>数据处理合规性</td>
+                <td>存储、使用、传输、共享、删除等环节的目的、方式与范围</td>
+                <td>处理环节问题清单</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>个人信息保护</td>
+                <td>隐私政策、用户同意、分类分级、敏感个人信息保护</td>
+                <td>个人信息保护整改建议</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>数据跨境传输</td>
+                <td>是否出境、出境路径、安全评估与标准合同的适用性</td>
+                <td>哪些数据可以出境、需要补什么手续</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="table-note">审查依据 12 部法律法规与国家标准，清单见<a href="research.html#laws">资料页</a>。法规更新时，审查清单同步更新。</p>
 
-        <h2 class="mt-40">五步标准化流程</h2>
-        <div class="grid grid--3 mt-24">
-          <article class="card card--hover" data-reveal>
-            <span class="step-num">01</span>
-            <h3>需求沟通</h3>
-            <p>了解业务模式、数据特点、合规需求与预算约束，明确审查范围、交付物与时间表。</p>
-          </article>
-          <article class="card card--hover" data-reveal>
-            <span class="step-num">02</span>
-            <h3>盘点分级</h3>
-            <p>数据发现工具与人工访谈结合，把散落在业务系统、表格和云端的资产拉出清单。</p>
-          </article>
-          <article class="card card--hover" data-reveal>
-            <span class="step-num">03</span>
-            <h3>审查评估</h3>
-            <p>法学团队逐项对照法律法规与行业标准，识别合规风险点并评定风险等级。</p>
-          </article>
-          <article class="card card--hover" data-reveal>
-            <span class="step-num">04</span>
-            <h3>出具报告</h3>
-            <p>输出问题清单、整改建议与改进路线图，按基础、专项、综合三类出具对应报告。</p>
-          </article>
-          <article class="card card--hover" data-reveal>
-            <span class="step-num">05</span>
-            <h3>跟踪复查</h3>
-            <p>协助企业落实整改，复查验证，把一次审查变成可年度复用的合规基线。</p>
-          </article>
-        </div>
-        <p class="notice notice--info mt-24">五步流程适用于首次合作与年度复查。资料齐备后，基础合规审查报告承诺在 5 个工作日内交付；材料缺失时，我们会先列一份资料清单，不打乱流程也不占用客户时间。</p>
-
-        <h2 class="mt-40">三类审查报告</h2>
-        <div class="grid grid--3 mt-24">
-          <article class="card" data-reveal>
-            <span class="badge badge--muted">约 15–20 页</span>
-            <h3 class="mt-24">基础合规审查报告</h3>
-            <p>适合首次合作的企业，覆盖数据资产盘点、来源合法性审查与处理合规性审查，给出基础风险清单和整改建议。</p>
-          </article>
-          <article class="card" data-reveal>
-            <span class="badge badge--teal">专题深入</span>
-            <h3 class="mt-24">专项合规审查报告</h3>
-            <p>针对特定议题展开，例如个人信息保护专项、数据跨境传输专项，结论更聚焦，措施更具体。</p>
-          </article>
-          <article class="card" data-reveal>
-            <span class="badge">约 30–50 页</span>
-            <h3 class="mt-24">综合合规评估报告</h3>
-            <p>覆盖合规体系评估、风险量化分析与整改方案设计，适合准备应对监管检查或规划年度合规建设的企业。</p>
-          </article>
-        </div>
-
-        <div class="grid grid--2 mt-24">
-          <div class="card" data-reveal>
-            <h3>报告固定七个部分</h3>
-            <ul class="list-check">
-              <li>审查概述与范围说明</li>
-              <li>数据资产清单</li>
-              <li>合法性审查结果</li>
-              <li>风险评估结果</li>
-              <li>整改建议方案</li>
-              <li>合规改进路线图</li>
-              <li>附录资料</li>
-            </ul>
+          <h2 style="margin-top:56px;">五步标准化流程</h2>
+          <div class="roadmap">
+            <div class="step">
+              <time>第 1 步</time>
+              <div><h3>需求沟通</h3><p>了解业务模式、数据特点、合规需求与预算，明确审查范围、交付物和时间表。</p></div>
+            </div>
+            <div class="step">
+              <time>第 2 步</time>
+              <div><h3>盘点分级</h3><p>数据发现工具与人工访谈结合，把散落在业务系统、表格和云端的资产拉出清单。</p></div>
+            </div>
+            <div class="step">
+              <time>第 3 步</time>
+              <div><h3>审查评估</h3><p>法学组逐项对照法律法规与行业标准，识别风险点并评定风险等级。</p></div>
+            </div>
+            <div class="step">
+              <time>第 4 步</time>
+              <div><h3>出具报告</h3><p>输出问题清单、整改建议与改进路线图，按基础、专项、综合三类出具对应报告。</p></div>
+            </div>
+            <div class="step">
+              <time>第 5 步</time>
+              <div><h3>跟踪复查</h3><p>协助企业落实整改，复查验证，把一次审查变成可年度复用的合规基线。</p></div>
+            </div>
           </div>
-          <div class="card" data-reveal>
-            <h3>双份交付，附一次解读</h3>
-            <p>电子版以加密 PDF 交付，支持在线查阅；纸质版装订成册，便于存档与内部传阅。</p>
-            <ul class="list-check mt-24">
-              <li>报告语言力求准确简洁，少用生涩法条术语</li>
-              <li>由审查人员向管理层面对面解读一次</li>
-              <li>整改过程中可提出复查申请</li>
-            </ul>
+          <p class="table-note">五步流程适用于首次合作与年度复查。资料齐备后，基础合规审查报告 5 个工作日内交付；材料缺失时先列资料清单，不占用客户时间。</p>
+
+          <h2 style="margin-top:56px;">三类审查报告</h2>
+          <table class="data-table">
+            <thead>
+              <tr><th>报告类型</th><th>篇幅</th><th>适合谁</th><th>内容</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>基础合规审查报告</td>
+                <td>约 15–20 页</td>
+                <td>首次合作、想先摸清底数的企业</td>
+                <td>数据资产盘点、来源合法性审查、处理合规性审查，附基础风险清单和整改建议</td>
+              </tr>
+              <tr>
+                <td>专项合规审查报告</td>
+                <td>按议题确定</td>
+                <td>有明确议题的企业</td>
+                <td>个人信息保护专项、数据跨境传输专项等，结论更聚焦，措施更具体</td>
+              </tr>
+              <tr>
+                <td>综合合规评估报告</td>
+                <td>约 30–50 页</td>
+                <td>准备应对监管检查或做年度合规建设的企业</td>
+                <td>合规体系评估、风险量化分析与整改方案设计</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="table-note">报告篇幅为参考值，实际页数随企业规模和数据量调整。</p>
+
+          <div class="split" style="margin-top:48px;">
+            <div class="txt">
+              <h3>报告固定七个部分</h3>
+              <p>审查概述与范围说明、数据资产清单、合法性审查结果、风险评估结果、整改建议方案、合规改进路线图、附录资料。每一部分都有对应的事实或法条支撑，不写空话。</p>
+            </div>
+            <div class="txt">
+              <h3>双份交付，附一次解读</h3>
+              <p>电子版以加密 PDF 交付，支持在线查阅；纸质版装订成册，便于存档和内部传阅。报告交付后，由审查人员向管理层当面解读一次；整改过程中可以提出复查申请。</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- 数据脱敏 -->
-    <section class="section" id="masking">
-      <div class="container">
-        <div class="section-head">
-          <span class="eyebrow">02 / 数据脱敏技术</span>
-          <h2>让敏感数据「可用不可见」</h2>
+    <section class="part" id="masking">
+      <div class="wrap">
+        <div class="part-label">脱敏<span>MASKING</span></div>
+        <div>
+          <h2>让敏感数据可用，但不落到个人</h2>
           <p class="lead">脱敏不是把数据删掉。目标是在保护个人信息的前提下，保留业务真正需要的信息量——既不能泄露，也不能把数据做成废纸。</p>
-        </div>
 
-        <h2>五类脱敏技术</h2>
-        <div class="grid grid--3 mt-24">
-          <article class="card card--hover" data-reveal>
-            <div class="card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3l18 18"/><path d="M10.6 6.2A9.7 9.7 0 0 1 12 6c6.5 0 10 6 10 6a17.6 17.6 0 0 1-3.3 3.9"/><path d="M6.2 7.6C3.8 9.2 2 12 2 12s3.5 6 10 6a10.6 10.6 0 0 0 4.2-.9"/><path d="M9.9 10.1a3 3 0 0 0 4.1 4.2"/></svg>
-            </div>
-            <h3>掩码替换</h3>
-            <p>对手机号、身份证号等字段局部掩码，如中间四位替换为星号，保留格式便于业务核验。</p>
-          </article>
-          <article class="card card--hover" data-reveal>
-            <div class="card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16"/><path d="M8 8v8M16 8v8"/></svg>
-            </div>
-            <h3>泛化处理</h3>
-            <p>把精确值收敛为区间，例如年龄转为年龄段、详细地址转为行政区，降低可识别性。</p>
-          </article>
-          <article class="card card--hover" data-reveal>
-            <div class="card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12c2-3.5 4-3.5 6 0s4 3.5 6 0 4-3.5 6 0"/></svg>
-            </div>
-            <h3>扰动添加</h3>
-            <p>在数据中加入随机噪声，原始值无法被精确还原，同时保留整体的统计特征。</p>
-          </article>
-          <article class="card card--hover" data-reveal>
-            <div class="card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4.5" y="10" width="15" height="10.5" rx="2.2"/><path d="M8 10V7.5a4 4 0 0 1 8 0V10"/></svg>
-            </div>
-            <h3>加密脱敏</h3>
-            <p>用加密算法处理敏感数据，仅在授权场景下解密使用，是安全强度最高的一种选择。</p>
-          </article>
-          <article class="card card--hover" data-reveal>
-            <div class="card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="3.5"/><path d="M12 3.5v3M12 17.5v3M3.5 12h3M17.5 12h3"/></svg>
-            </div>
-            <h3>差分隐私</h3>
-            <p>在查询结果中加入校准噪声，为统计发布提供可证明的隐私保护，同时保住统计结论的可用性。</p>
-          </article>
-        </div>
+          <h2 style="margin-top:48px;">五类脱敏技术</h2>
+          <table class="data-table">
+            <thead>
+              <tr><th>技术</th><th>怎么做</th><th>适用字段</th><th>数据可用性</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>掩码替换</td>
+                <td>对字段局部掩码，例如手机号中间四位替换为星号，保留格式便于业务核验</td>
+                <td>手机号、身份证号、银行卡号</td>
+                <td>中</td>
+              </tr>
+              <tr>
+                <td>泛化处理</td>
+                <td>把精确值收敛为区间，例如年龄转年龄段、详细地址转行政区</td>
+                <td>年龄、地址、收入区间</td>
+                <td>中</td>
+              </tr>
+              <tr>
+                <td>扰动添加</td>
+                <td>在数据中加入随机噪声，原始值无法精确还原，整体统计特征保留</td>
+                <td>交易金额、统计指标</td>
+                <td>高</td>
+              </tr>
+              <tr>
+                <td>加密脱敏</td>
+                <td>用加密算法处理敏感数据，仅在授权场景下解密使用</td>
+                <td>高敏感数据的存储与传输</td>
+                <td>低</td>
+              </tr>
+              <tr>
+                <td>差分隐私</td>
+                <td>在查询结果中加入校准噪声，为统计发布提供可证明的隐私保护</td>
+                <td>对外统计查询与发布</td>
+                <td>高</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="table-note">表中可用性为方案设定值，具体技术组合以实际评估结论为准。</p>
 
-        <h2 class="mt-40">服务五个环节</h2>
-        <div class="timeline mt-24">
-          <div class="timeline-item" data-reveal>
-            <span class="timeline-date">01 / 需求评估</span>
-            <h3>先弄清楚哪些字段不能见光</h3>
-            <p>识别企业敏感数据分布，评估风险等级与业务可用性要求，输出脱敏范围清单。</p>
+          <h2 style="margin-top:56px;">五个服务环节</h2>
+          <div class="roadmap">
+            <div class="step">
+              <time>第 1 步</time>
+              <div><h3>需求评估</h3><p>识别敏感数据分布，评估风险等级与业务可用性要求，输出脱敏范围清单。</p></div>
+            </div>
+            <div class="step">
+              <time>第 2 步</time>
+              <div><h3>策略设计</h3><p>结合数据类型、使用场景与安全要求，选定脱敏算法与参数配置，明确可用性底线。</p></div>
+            </div>
+            <div class="step">
+              <time>第 3 步</time>
+              <div><h3>算法实施</h3><p>用自研脱敏工具批量处理，同时保留人工复审，避免机器误伤业务字段。</p></div>
+            </div>
+            <div class="step">
+              <time>第 4 步</time>
+              <div><h3>效果验证</h3><p>对脱敏后的数据做质量检查与安全验证，确认达到预期目标后再交付。</p></div>
+            </div>
+            <div class="step">
+              <time>第 5 步</time>
+              <div><h3>部署与运维</h3><p>把脱敏能力集成到企业现有系统，按季度复核策略；表结构变化时同步更新规则。</p></div>
+            </div>
           </div>
-          <div class="timeline-item" data-reveal>
-            <span class="timeline-date">02 / 策略设计</span>
-            <h3>按场景定算法与参数</h3>
-            <p>结合数据类型、使用场景与安全要求，选定脱敏算法与参数配置，明确可用性底线。</p>
-          </div>
-          <div class="timeline-item" data-reveal>
-            <span class="timeline-date">03 / 算法实施</span>
-            <h3>批量处理，人工把关</h3>
-            <p>用自研脱敏工具完成自动化处理，同时保留人工复审环节，避免机器误伤业务字段。</p>
-          </div>
-          <div class="timeline-item" data-reveal>
-            <span class="timeline-date">04 / 效果验证</span>
-            <h3>交付前先自己验一遍</h3>
-            <p>对脱敏后的数据做质量检查与安全验证，确认达到预期目标后再交付客户。</p>
-          </div>
-          <div class="timeline-item" data-reveal>
-            <span class="timeline-date">05 / 部署与运维</span>
-            <h3>嵌进现有系统，持续调优</h3>
-            <p>将脱敏能力集成到企业现有系统，按季度复核策略，数据库表结构变化时同步更新规则。</p>
-          </div>
-        </div>
 
-        <h2 class="mt-40">五项技术优势</h2>
-        <div class="grid grid--3 mt-24">
-          <article class="card" data-reveal>
-            <h3>算法多样</h3>
-            <p>五类技术灵活组合，按场景选型，而不是拿一套方案套所有数据。</p>
-          </article>
-          <article class="card" data-reveal>
-            <h3>自动化程度高</h3>
-            <p>自研工具批量处理，速度可达 1000 条/秒，大表不必靠人工逐条修改。</p>
-          </article>
-          <article class="card" data-reveal>
-            <h3>精准度高</h3>
-            <p>AI 辅助识别敏感字段，识别准确率 95% 以上，误脱敏率低于 1%。</p>
-          </article>
-          <article class="card" data-reveal>
-            <h3>全程可追溯</h3>
-            <p>每次脱敏记录策略、参数与操作人，支持审计和回溯，出了问题能查到环节。</p>
-          </article>
-          <article class="card" data-reveal>
-            <h3>兼容性好</h3>
-            <p>支持多种数据源与文件格式，能嵌进企业现有系统，不必推倒重来。</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- 脱敏技术选型 -->
-    <section class="section section--alt">
-      <div class="container">
-        <div class="section-head">
-          <span class="eyebrow">技术选型</span>
-          <h2>六种脱敏技术，怎么组合才对</h2>
-          <p class="lead">没有一种技术能同时满足安全、可用与性能。真正要做的，是按数据类型和使用场景，把几种技术叠起来用。</p>
-        </div>
-        <div class="table-wrap">
-          <table>
+          <h2 style="margin-top:56px;">六种技术怎么组合</h2>
+          <table class="data-table">
             <thead>
               <tr><th>脱敏技术</th><th>数据可用性</th><th>安全强度</th><th>适用场景</th><th>实现复杂度</th><th>性能效率</th></tr>
             </thead>
             <tbody>
-              <tr><td><strong>掩码替换</strong></td><td>中</td><td>中</td><td>身份信息脱敏</td><td>低</td><td>高</td></tr>
-              <tr><td><strong>泛化处理</strong></td><td>中</td><td>中</td><td>统计分析场景</td><td>低</td><td>高</td></tr>
-              <tr><td><strong>数据扰动</strong></td><td>高</td><td>中</td><td>数据分析挖掘</td><td>中</td><td>中</td></tr>
-              <tr><td><strong>加密脱敏</strong></td><td>低</td><td>高</td><td>数据存储传输</td><td>中</td><td>中</td></tr>
-              <tr><td><strong>差分隐私</strong></td><td>高</td><td>高</td><td>统计查询发布</td><td>高</td><td>低</td></tr>
-              <tr><td><strong>假名化</strong></td><td>中</td><td>中</td><td>跨系统数据关联</td><td>中</td><td>高</td></tr>
+              <tr><td>掩码替换</td><td>中</td><td>中</td><td>身份信息脱敏</td><td>低</td><td>高</td></tr>
+              <tr><td>泛化处理</td><td>中</td><td>中</td><td>统计分析场景</td><td>低</td><td>高</td></tr>
+              <tr><td>数据扰动</td><td>高</td><td>中</td><td>数据分析挖掘</td><td>中</td><td>中</td></tr>
+              <tr><td>加密脱敏</td><td>低</td><td>高</td><td>数据存储传输</td><td>中</td><td>中</td></tr>
+              <tr><td>差分隐私</td><td>高</td><td>高</td><td>统计查询发布</td><td>高</td><td>低</td></tr>
+              <tr><td>假名化</td><td>中</td><td>中</td><td>跨系统数据关联</td><td>中</td><td>高</td></tr>
             </tbody>
           </table>
-        </div>
+          <p class="table-note">表中评价为项目方案设定，用于说明技术取舍逻辑，具体组合以评估结论为准。</p>
 
-        <div class="grid grid--3 mt-40">
-          <article class="card" data-reveal>
-            <span class="card-index">常规业务</span>
-            <h3 class="mt-24">优先效率</h3>
-            <p>日常查询与页面展示，选掩码替换与泛化处理，实现简单、性能高，足以阻断身份识别。</p>
-          </article>
-          <article class="card" data-reveal>
-            <span class="card-index">高敏感数据</span>
-            <h3 class="mt-24">优先安全</h3>
-            <p>敏感数据的存储与传输采用加密脱敏，仅在授权场景解密，牺牲部分可用性换安全强度。</p>
-          </article>
-          <article class="card" data-reveal>
-            <span class="card-index">分析共享</span>
-            <h3 class="mt-24">优先隐私</h3>
-            <p>数据挖掘与统计发布场景，用扰动与差分隐私换取可证明的隐私保障。</p>
-          </article>
+          <h2 style="margin-top:56px;">五项技术优势</h2>
+          <table class="data-table">
+            <thead><tr><th>优势</th><th>说明</th></tr></thead>
+            <tbody>
+              <tr><td>算法多样</td><td>五类技术灵活组合，按场景选型，不拿一套方案套所有数据。</td></tr>
+              <tr><td>自动化程度高</td><td>自研工具批量处理，速度可达 1000 条/秒，大表不必人工逐条修改。</td></tr>
+              <tr><td>精准度高</td><td>AI 辅助识别敏感字段，识别准确率 95% 以上，误脱敏率低于 1%。</td></tr>
+              <tr><td>全程可追溯</td><td>每次脱敏记录策略、参数与操作人，支持审计和回溯。</td></tr>
+              <tr><td>兼容性好</td><td>支持多种数据源与文件格式，能嵌进企业现有系统，不必推倒重来。</td></tr>
+            </tbody>
+          </table>
+          <p class="table-note">性能指标来自项目方案设定，随算法迭代持续优化。</p>
+
+          <div class="split" style="margin-top:48px;">
+            <div class="txt">
+              <h3>按场景选型</h3>
+              <p><b>常规业务</b>：日常查询与页面展示，选掩码替换与泛化处理，实现简单、性能高，足以阻断身份识别。</p>
+              <p><b>高敏感数据</b>：存储与传输用加密脱敏，仅在授权场景解密，牺牲部分可用性换安全强度。</p>
+              <p><b>分析共享</b>：数据挖掘与统计发布，用扰动与差分隐私换取可证明的隐私保障。</p>
+            </div>
+            <figure style="margin:0;">
+              <img src="assets/img/laptop.jpg" alt="笔记本电脑上展示的数据看板" loading="lazy">
+              <figcaption>同一份数据里，身份字段走掩码、金额走扰动、备注走识别替换，对外只呈现一套结果</figcaption>
+            </figure>
+          </div>
         </div>
-        <p class="text-sm text-muted mt-24 mb-0">表中评价为项目方案设定，用于说明技术取舍逻辑，具体技术组合以实际评估结论为准。</p>
       </div>
     </section>
 
-    <!-- 风险防控与合规治理 -->
-    <section class="section" id="risk">
-      <div class="container">
-        <div class="section-head">
-          <span class="eyebrow">03 / 风险防控与合规治理</span>
-          <h2>把合规从一次性项目，变成日常能力</h2>
-          <p class="lead">审查和脱敏解决的是当下的问题，风险防控解决的是「下一次」。我们把它拆成四件天天要做的事，再加一套让制度真正落地的治理动作。</p>
-        </div>
+    <!-- 风险监测与应急处置 -->
+    <section class="part paper" id="risk">
+      <div class="wrap">
+        <div class="part-label">监测<span>MONITORING</span></div>
+        <div>
+          <h2>四层监测，从发现到处置</h2>
+          <p class="lead">审查和脱敏解决的是当下的问题，监测解决的是「下一次」。四个环节每天都要跑：评估、监测、预警、处置。</p>
 
-        <h2>风险防控四环</h2>
-        <div class="steps mt-24">
-          <div class="step" data-reveal>
-            <span class="step-num">01</span>
-            <h3>风险评估</h3>
-            <p>定期评估数据资产价值、威胁来源、脆弱性与影响范围，形成可跟踪的风险台账。</p>
+          <div class="roadmap">
+            <div class="step">
+              <time>第 1 层</time>
+              <div><h3>风险评估</h3><p>定期评估数据资产价值、威胁来源、脆弱性与影响范围，形成可跟踪的风险台账。</p></div>
+            </div>
+            <div class="step">
+              <time>第 2 层</time>
+              <div><h3>风险监测</h3><p>动态监测系统 7×24 小时覆盖数据访问、传输与使用行为，异常不靠事后发现。</p></div>
+            </div>
+            <div class="step">
+              <time>第 3 层</time>
+              <div><h3>风险预警</h3><p>命中规则即触发预警，30 分钟内送达企业联系人，并同步通知项目团队。</p></div>
+            </div>
+            <div class="step">
+              <time>第 4 层</time>
+              <div><h3>应急处置</h3><p>1 小时内启动应急流程：风险确认、影响评估、处置执行、事后复盘。</p></div>
+            </div>
           </div>
-          <div class="step" data-reveal>
-            <span class="step-num">02</span>
-            <h3>风险监测</h3>
-            <p>部署动态监测系统，7×24 小时覆盖数据访问、传输与使用行为，异常不再靠事后发现。</p>
-          </div>
-          <div class="step" data-reveal>
-            <span class="step-num">03</span>
-            <h3>风险预警</h3>
-            <p>命中规则即触发预警，30 分钟内送达企业联系人，并同步通知项目团队。</p>
-          </div>
-          <div class="step" data-reveal>
-            <span class="step-num">04</span>
-            <h3>应急处置</h3>
-            <p>1 小时内启动应急流程：风险确认、影响评估、处置执行、事后复盘。</p>
-          </div>
-        </div>
 
-        <h2 class="mt-40">合规治理四件事</h2>
-        <div class="grid grid--4 mt-24">
-          <article class="card" data-reveal>
-            <span class="card-index">制度</span>
-            <h3 class="mt-24">制度建设</h3>
-            <p>数据安全管理制度、个人信息保护制度、分类分级制度与应急预案一次配套到位。</p>
-          </article>
-          <article class="card" data-reveal>
-            <span class="card-index">培训</span>
-            <h3 class="mt-24">合规培训</h3>
-            <p>面向全员与管理层的法规解读、操作规范与案例复盘，线上课程加线下讲座。</p>
-          </article>
-          <article class="card" data-reveal>
-            <span class="card-index">审计</span>
-            <h3 class="mt-24">合规审计</h3>
-            <p>定期检查制度落实与流程执行，找出薄弱环节并跟踪整改到位。</p>
-          </article>
-          <article class="card" data-reveal>
-            <span class="card-index">认证</span>
-            <h3 class="mt-24">认证辅导</h3>
-            <p>ISO 27001、等级保护 2.0 的申报路径梳理与材料准备辅导，按企业实际条件推进。</p>
-          </article>
+          <h2 style="margin-top:56px;">合规治理四件事</h2>
+          <div class="split">
+            <div class="txt">
+              <h3>制度、培训、审计、认证</h3>
+              <p><b>制度建设</b>：数据安全管理制度、个人信息保护制度、分类分级制度与应急预案一次配套到位。</p>
+              <p><b>合规培训</b>：面向全员与管理层的法规解读、操作规范与案例复盘，线上课程加线下讲座。</p>
+              <p><b>合规审计</b>：定期检查制度落实与流程执行，找出薄弱环节并跟踪整改到位。</p>
+              <p><b>认证辅导</b>：ISO 27001、等级保护 2.0 的申报路径梳理与材料准备辅导，按企业实际条件推进。</p>
+            </div>
+            <figure style="margin:0;">
+              <img src="assets/img/office.jpg" alt="有长桌和落地窗的办公会议室" loading="lazy">
+              <figcaption>治理动作要落到具体的人和表：制度有人执行，培训有签到，审计有记录</figcaption>
+            </figure>
+          </div>
+          <p class="table-note" style="margin-top:20px;">认证与测评结果由具备资质的第三方认证机构、测评机构依据国家及行业标准评定。数商提供辅导与准备服务，不对认证结果作出承诺。应急联系人 <span class="ph">待填写</span>，服务合同签署后同步值班电话与响应流程。</p>
+
+          <div class="numbers" style="margin-top:48px;">
+            <div class="num"><b>30 分钟</b><span>风险预警送达企业联系人</span></div>
+            <div class="num"><b>1 小时</b><span>启动应急处置流程</span></div>
+            <div class="num"><b>5 天</b><span>审查报告交付（按工作日计）</span></div>
+            <div class="num"><b>24 小时</b><span>投诉受理并给出初步方案</span></div>
+          </div>
+          <p class="table-note" style="margin-top:22px;">以上为服务承诺，写入服务合同；起算时间与前提条件见下方服务标准。</p>
         </div>
-        <p class="notice mt-24">认证与测评结果由具备资质的第三方认证机构、测评机构依据国家及行业标准评定。数商提供辅导与准备服务，不对认证结果作出承诺。</p>
-        <p class="text-sm text-muted mt-24 mb-0">应急处置由项目负责人牵头，应急联系人 <span class="placeholder">待填写</span>；服务合同签署后同步值班电话与响应流程。</p>
       </div>
     </section>
 
     <!-- 服务与报价 -->
-    <section class="section section--alt" id="pricing">
-      <div class="container">
-        <div class="section-head">
-          <span class="eyebrow">服务与报价</span>
+    <section class="part" id="pricing">
+      <div class="wrap">
+        <div class="part-label">报价<span>PRICING</span></div>
+        <div>
           <h2>明码标价，先把预算算清楚</h2>
-          <p class="lead">下表是主要服务产品的参考价区间。实际价格随企业规模、数据量、系统复杂度与定制需求调整，签约前会提供书面报价单。</p>
-        </div>
-        <div class="table-wrap">
-          <table>
+          <p class="lead">下表是主要服务的参考价区间。实际价格随企业规模、数据量、系统复杂度与定制需求调整，签约前提供书面报价单。</p>
+
+          <table class="data-table">
             <thead>
               <tr><th>服务类别</th><th>服务项目</th><th>服务内容</th><th>参考报价</th><th>服务周期</th></tr>
             </thead>
             <tbody>
-              <tr><td>基础服务</td><td><strong>数据合法性审查</strong></td><td>数据处理活动全流程合规审查</td><td>¥ X,XXX–XX,XXX</td><td>5–10 个工作日</td></tr>
-              <tr><td>基础服务</td><td><strong>数据脱敏处理</strong></td><td>敏感数据识别与脱敏处理</td><td>¥ X,XXX–XX,XXX</td><td>3–7 个工作日</td></tr>
-              <tr><td>基础服务</td><td><strong>动态风险监测</strong></td><td>7×24 小时数据安全监测</td><td>¥ X,XXX/月</td><td>按月或按年</td></tr>
-              <tr><td>增值服务</td><td><strong>合规培训</strong></td><td>企业全员数据合规培训</td><td>¥ X,XXX/次</td><td>1–2 天</td></tr>
-              <tr><td>增值服务</td><td><strong>合规认证辅导</strong></td><td>ISO 27001 等体系认证辅导</td><td>¥ X,XXX–XX,XXX</td><td>1–3 个月</td></tr>
-              <tr><td>增值服务</td><td><strong>数据出境评估</strong></td><td>数据出境合规评估</td><td>¥ X,XXX–XX,XXX</td><td>10–15 个工作日</td></tr>
-              <tr><td>增值服务</td><td><strong>应急响应</strong></td><td>数据安全事件应急处置</td><td>面议</td><td>即时响应</td></tr>
-              <tr><td>套餐服务</td><td><strong>年度合规管家</strong></td><td>审查 + 监测 + 培训 + 咨询</td><td>¥ X,XXX–XX,XXX/年</td><td>一年</td></tr>
-              <tr><td>定制服务</td><td><strong>行业合规方案</strong></td><td>行业化定制合规解决方案</td><td>面议</td><td>按项目</td></tr>
+              <tr><td>基础服务</td><td>数据合法性审查</td><td>数据处理活动全流程合规审查</td><td>¥ X,XXX–XX,XXX</td><td>5–10 个工作日</td></tr>
+              <tr><td>基础服务</td><td>数据脱敏处理</td><td>敏感数据识别与脱敏处理</td><td>¥ X,XXX–XX,XXX</td><td>3–7 个工作日</td></tr>
+              <tr><td>基础服务</td><td>动态风险监测</td><td>7×24 小时数据安全监测</td><td>¥ X,XXX/月</td><td>按月或按年</td></tr>
+              <tr><td>增值服务</td><td>合规培训</td><td>企业全员数据合规培训</td><td>¥ X,XXX/次</td><td>1–2 天</td></tr>
+              <tr><td>增值服务</td><td>合规认证辅导</td><td>ISO 27001 等体系认证辅导</td><td>¥ X,XXX–XX,XXX</td><td>1–3 个月</td></tr>
+              <tr><td>增值服务</td><td>数据出境评估</td><td>数据出境合规评估</td><td>¥ X,XXX–XX,XXX</td><td>10–15 个工作日</td></tr>
+              <tr><td>增值服务</td><td>应急响应</td><td>数据安全事件应急处置</td><td>面议</td><td>即时响应</td></tr>
+              <tr><td>套餐服务</td><td>年度合规管家</td><td>审查 + 监测 + 培训 + 咨询</td><td>¥ X,XXX–XX,XXX/年</td><td>一年</td></tr>
+              <tr><td>定制服务</td><td>行业合规方案</td><td>行业化定制合规解决方案</td><td>面议</td><td>按项目</td></tr>
             </tbody>
           </table>
-        </div>
-        <p class="text-sm text-muted mt-24">以上为占位报价，正式价格以服务合同为准。价格随企业规模、数据量与定制需求调整，同一服务在不同行业的实施工作量差异较大，报价前我们会先做一次需求确认。</p>
+          <p class="table-note">占位价格，以服务合同为准。价格随企业规模、数据量与定制需求调整；同一服务在不同行业的实施工作量差异较大，报价前先做一次需求确认。</p>
 
-        <h2 class="mt-40">年度合规管家</h2>
-        <div class="grid grid--2 mt-24">
-          <div class="card" data-reveal>
-            <span class="badge badge--teal">组合服务</span>
-            <h3 class="mt-24">把合规交给一支固定团队</h3>
-            <p>适合已经开始被客户、平台方或监管部门追问数据合规，但还没有专职合规岗位的企业。</p>
-            <ul class="list-check mt-24">
-              <li>年度数据合法性审查（基础或专项）</li>
-              <li>7×24 小时风险监测与月度风险简报</li>
-              <li>全员合规培训与制度更新</li>
-              <li>日常合规咨询按需响应</li>
-            </ul>
-          </div>
-          <div class="card" data-reveal>
-            <h3>适合什么样的企业</h3>
-            <ul class="list-check">
-              <li>年营业收入 500 万至 5000 万元的中小微企业</li>
-              <li>电商零售、制造业、医疗健康、教育培训、金融服务、物流供应链等数据密集型行业</li>
-              <li>没有专职数据合规岗位，法务往往身兼数职</li>
-              <li>希望在预算可控的前提下，把合规从「救火」变成「体检」</li>
-            </ul>
-            <div class="text-sm text-muted mt-24">服务包内容与频次以合同约定为准；专属顾问 <span class="placeholder">待填写</span>。</div>
+          <h2 style="margin-top:56px;">年度合规管家</h2>
+          <div class="split">
+            <div class="txt">
+              <h3>把合规交给一支固定团队</h3>
+              <p>适合已经被客户、平台方或监管部门追问数据合规，但还没有专职合规岗位的企业。服务包内容与频次以合同约定为准。</p>
+              <p>年度数据合法性审查（基础或专项）；7×24 小时风险监测与月度风险简报；全员合规培训与制度更新；日常合规咨询按需响应。</p>
+              <p>专属顾问 <span class="ph">待填写</span>。</p>
+            </div>
+            <div class="txt">
+              <h3>适合什么样的企业</h3>
+              <p>年营业收入 500 万至 5000 万元的中小微企业；电商零售、制造业、医疗健康、教育培训、金融服务、物流供应链等数据密集型行业。</p>
+              <p>没有专职数据合规岗位，法务往往身兼数职；希望在预算可控的前提下，把合规从「救火」变成「体检」。</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 服务标准与质量控制 -->
-    <section class="section">
-      <div class="container">
-        <div class="section-head">
-          <span class="eyebrow">服务标准与质量控制</span>
+    <!-- 服务标准 -->
+    <section class="part paper" id="standard">
+      <div class="wrap">
+        <div class="part-label">服务标准<span>STANDARDS</span></div>
+        <div>
           <h2>交付不是靠承诺，是靠标准</h2>
           <p class="lead">每一项服务都有明确的时限、复核层级和责任人。标准既写进服务合同，也写进内部的质量检查点。</p>
-        </div>
 
-        <h2>服务时效（SLA）</h2>
-        <div class="table-wrap mt-24">
-          <table>
+          <h2 style="margin-top:48px;">服务时效（SLA）</h2>
+          <table class="data-table">
             <thead>
               <tr><th>服务指标</th><th>承诺时效</th><th>说明</th></tr>
             </thead>
             <tbody>
-              <tr><td><strong>审查报告交付</strong></td><td>5 个工作日</td><td>自资料齐备之日起计算</td></tr>
-              <tr><td><strong>风险预警通知</strong></td><td>30 分钟内</td><td>监测系统发现异常后送达企业联系人</td></tr>
-              <tr><td><strong>应急处置启动</strong></td><td>1 小时内</td><td>接到通知后启动确认、隔离与处置流程</td></tr>
-              <tr><td><strong>客户投诉响应</strong></td><td>24 小时内</td><td>受理投诉并给出初步处理方案</td></tr>
-              <tr><td><strong>客户投诉处理</strong></td><td>5 个工作日内</td><td>完成处理、回访与复盘记录</td></tr>
+              <tr><td>审查报告交付</td><td>5 个工作日</td><td>自资料齐备之日起计算</td></tr>
+              <tr><td>风险预警通知</td><td>30 分钟内</td><td>监测系统发现异常后送达企业联系人</td></tr>
+              <tr><td>应急处置启动</td><td>1 小时内</td><td>接到通知后启动确认、隔离与处置流程</td></tr>
+              <tr><td>客户投诉响应</td><td>24 小时内</td><td>受理投诉并给出初步处理方案</td></tr>
+              <tr><td>客户投诉处理</td><td>5 个工作日内</td><td>完成处理、回访与复盘记录</td></tr>
             </tbody>
           </table>
-        </div>
 
-        <h2 class="mt-40">三级复核</h2>
-        <div class="grid grid--3 mt-24">
-          <article class="card" data-reveal>
-            <span class="card-index">初审</span>
-            <h3 class="mt-24">完整性自查</h3>
-            <p>审查人员逐项核对数据、引用与结论，确认报告完整、准确、无遗漏。</p>
-          </article>
-          <article class="card" data-reveal>
-            <span class="card-index">复审</span>
-            <h3 class="mt-24">专业性与规范性</h3>
-            <p>质量负责人 <span class="placeholder">待填写</span> 复核风险定级与整改建议，确认每一条结论都站得住。</p>
-          </article>
-          <article class="card" data-reveal>
-            <span class="card-index">终审</span>
-            <h3 class="mt-24">结论签发</h3>
-            <p>项目负责人 <span class="placeholder">待填写</span> 确认结论与建议后签发，保证对外交付口径一致。</p>
-          </article>
+          <h2 style="margin-top:56px;">三级复核</h2>
+          <div class="roadmap">
+            <div class="step">
+              <time>初审</time>
+              <div><h3>完整性自查</h3><p>审查人员逐项核对数据、引用与结论，确认报告完整、准确、无遗漏。</p></div>
+            </div>
+            <div class="step">
+              <time>复审</time>
+              <div><h3>专业性与规范性</h3><p>质量负责人 <span class="ph">待填写</span> 复核风险定级与整改建议，确认每一条结论都站得住。</p></div>
+            </div>
+            <div class="step">
+              <time>终审</time>
+              <div><h3>结论签发</h3><p>项目负责人 <span class="ph">待填写</span> 确认结论与建议后签发，保证对外交付口径一致。</p></div>
+            </div>
+          </div>
+          <p class="table-note" style="margin-top:20px;">每月随机抽取 10% 的报告做质量评估，结果纳入考核。客户满意度目标为 90 分以上（满分 100），低于 85 分启动专项改进并安排二次回访。每个客户项目配项目经理，负责计划制定、任务分配、进度跟踪与成果验收，服务过程在项目管理系统中留痕，客户可随时查询进度。</p>
         </div>
-        <p class="text-sm text-muted mt-24">每月随机抽取 10% 的报告做质量评估，结果纳入绩效考核。客户满意度目标为 90 分以上（满分 100），低于 85 分启动专项改进并安排二次回访。</p>
-        <p class="text-sm text-muted mb-0">每个客户项目配备项目经理，负责计划制定、任务分配、进度跟踪与成果验收，服务过程在项目管理系统中留痕，客户可随时查询进度。</p>
       </div>
     </section>
 
-    <!-- CTA -->
-    <section class="section section--tight">
-      <div class="container">
-        <div class="cta-band" data-reveal>
+    <!-- 联系 -->
+    <section class="contact-band" id="contact">
+      <div class="wrap">
+        <div>
           <h2>不确定先补哪一块？</h2>
           <p>3 分钟线上合规自测可以帮你定位短板；也可以直接联系我们，由顾问根据企业规模与所处行业，给出服务组合与实施顺序的建议。</p>
-          <div class="row">
-            <a class="btn btn--light btn--lg" href="check.html">开始合规自测</a>
-            <a class="btn btn--ghost-light btn--lg" href="contact.html">联系我们</a>
-            <a class="btn btn--ghost-light btn--lg" href="technology.html">了解技术方案</a>
-          </div>
+          <p style="margin-top:18px;"><a href="check.html" style="color:var(--brand);border-bottom:1px solid var(--brand);">开始免费自测 →</a></p>
+        </div>
+        <div class="contact-list">
+          <div><span>邮箱</span><span><span class="ph">待填写</span></span></div>
+          <div><span>电话</span><span><span class="ph">待填写</span></span></div>
+          <div><span>地址</span><span>哈尔滨市松北区 · 哈尔滨商业大学</span></div>
+          <div><span>工作时间</span><span>周一至周五 9:00 – 18:00</span></div>
         </div>
       </div>
     </section>
-
   </main>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <a class="brand" href="index.html">
-            <span class="brand-mark" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 3 5 6v5.5c0 4.3 2.9 7.9 7 9.5 4.1-1.6 7-5.2 7-9.5V6l-7-3Z"/>
-                <path d="M9.2 12.2l1.9 1.9 3.8-3.9"/>
-              </svg>
-            </span>
-            <span class="brand-text">数商<em>DATA COMPLIANCE</em></span>
-          </a>
-          <p class="footer-desc">数商——中小企业数据合规审理服务。以法律与技术双核驱动，让每一家中小企业都用得起专业的数据合规保障。</p>
-          <span class="badge badge--muted" style="background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.14);color:#9fb3cf;">示例站点 · 内容待替换</span>
-        </div>
-        <div>
-          <h4>服务</h4>
-          <div class="footer-links">
-            <a href="services.html#review">数据合法性审查</a>
-            <a href="services.html#masking">数据脱敏技术</a>
-            <a href="services.html#risk">风险防控与治理</a>
-            <a href="services.html#pricing">服务与报价</a>
-          </div>
-        </div>
-        <div>
-          <h4>关于</h4>
-          <div class="footer-links">
-            <a href="about.html">关于数商</a>
-            <a href="technology.html">技术方案</a>
-            <a href="check.html">合规自测</a>
-            <a href="contact.html">联系我们</a>
-          </div>
-        </div>
-        <div>
-          <h4>联系</h4>
-          <div class="footer-links">
-            <span>邮箱：<span class="placeholder">待填写</span></span>
-            <span>电话：<span class="placeholder">待填写</span></span>
-            <span>地址：哈尔滨市 · 哈尔滨商业大学</span>
-          </div>
-        </div>
+  <footer class="foot">
+    <div class="wrap">
+      <div>
+        <div class="brandline">数商 · 中小企业数据合规服务</div>
+        <p style="max-width:300px;">哈尔滨商业大学法学院与计算机与信息工程学院学生创业项目。</p>
       </div>
-      <div class="footer-bottom">
-        <span>© <span data-year>2026</span> 数商 · 中小企业数据合规审理服务</span>
-        <span>哈尔滨商业大学法学院</span>
-        <span>备案号：<span class="placeholder">待备案</span></span>
+      <div class="col">
+        <h4>服务</h4>
+        <a href="services.html#review">数据合法性审查</a>
+        <a href="services.html#masking">数据脱敏</a>
+        <a href="services.html#risk">风险监测与应急</a>
+        <a href="services.html#pricing">价格</a>
       </div>
+      <div class="col">
+        <h4>关于</h4>
+        <a href="about.html">团队</a>
+        <a href="technology.html">技术</a>
+        <a href="research.html">资料</a>
+        <a href="contact.html">联系</a>
+      </div>
+      <div class="col">
+        <h4>联系</h4>
+        <span>邮箱：<span class="ph">待填写</span></span>
+        <span>电话：<span class="ph">待填写</span></span>
+        <span>哈尔滨市松北区</span>
+      </div>
+    </div>
+    <div class="wrap bottom">
+      <span>© 2026 数商 · 哈尔滨商业大学</span>
+      <span>备案号：<span class="ph">待备案</span></span>
+      <span>配图来自 Unsplash</span>
     </div>
   </footer>
 
-  <script src="assets/js/main.js" defer></script>
 </body>
 </html>

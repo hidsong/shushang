@@ -148,7 +148,7 @@ p { margin: 0 0 1em; }
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(8, 14, 22, 0.35) 0%, rgba(8, 14, 22, 0.55) 45%, rgba(8, 14, 22, 0.88) 100%);
+  background: linear-gradient(180deg, rgba(8, 14, 22, 0.62) 0%, rgba(8, 14, 22, 0.7) 45%, rgba(8, 14, 22, 0.92) 100%);
 }
 
 .hero .wrap {
