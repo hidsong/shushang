@@ -141,7 +141,7 @@ p { margin: 0 0 1em; }
   display: flex;
   align-items: flex-end;
   color: #fff;
-  background: #0e1a26 url("../img/hero2.jpg") center 42% / cover no-repeat;
+  background: #0e1a26 url("../img/hero-city.jpg") center 42% / cover no-repeat;
 }
 
 .hero::before {
@@ -245,12 +245,12 @@ p { margin: 0 0 1em; }
 
 .banner p { color: #c4d2de; font-size: 14.5px; max-width: 680px; margin: 0; }
 
-.banner.img-building { background-image: url("../img/building.jpg"); }
-.banner.img-meeting { background-image: url("../img/meeting.jpg"); }
-.banner.img-docs { background-image: url("../img/docs.jpg"); }
-.banner.img-server { background-image: url("../img/server.jpg"); }
-.banner.img-office { background-image: url("../img/office.jpg"); }
-.banner.img-team { background-image: url("../img/team.jpg"); }
+.banner.img-building { background-image: url("../img/banner-building.jpg"); }
+.banner.img-meeting { background-image: url("../img/img-lounge.jpg"); }
+.banner.img-docs { background-image: url("../img/img-audit.jpg"); }
+.banner.img-server { background-image: url("../img/img-chip.jpg"); }
+.banner.img-office { background-image: url("../img/img-corridor.jpg"); }
+.banner.img-team { background-image: url("../img/img-team.jpg"); }
 
 /* ---------- 通用分节 ---------- */
 .part { padding: 96px 0; border-bottom: 1px solid var(--line-2); }
