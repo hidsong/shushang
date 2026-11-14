@@ -49,7 +49,7 @@
     <section class="banner img-server">
       <div class="wrap">
         <h1>技术</h1>
-        <p>法律条文不会自己变成技术动作。这一页讲清楚：数商怎么把「合法、正当、必要」翻译成识别规则、脱敏策略、监测模型与加密配置，并且让每一步都能验证。</p>
+        <p>这一页说明技术方案：识别规则、脱敏策略、监测模型、加密配置，以及每一步怎么验证。</p>
       </div>
     </section>
 
@@ -60,9 +60,9 @@
     <!-- 四层架构 -->
     <section class="part" id="architecture">
       <div class="wrap">
-        <div class="part-label">架构<span>ARCHITECTURE</span></div>
+        <div class="part-label">架构</div>
         <div>
-          <h2>一套支撑合规服务的技术底座</h2>
+          <h2>技术架构</h2>
           <p class="lead">四层之间通过标准接口通信，任何一层升级都不必推倒重来。对客户来说，这意味着服务能持续演进，而不是每换一次技术就重做一次方案。</p>
 
           <div class="roadmap">
@@ -101,12 +101,12 @@
     <!-- 脱敏算法 -->
     <section class="part paper" id="masking-tech">
       <div class="wrap">
-        <div class="part-label">脱敏算法<span>MASKING</span></div>
+        <div class="part-label">脱敏算法</div>
         <div>
-          <h2>同样的字段，不同的脱敏打法</h2>
+          <h2>脱敏算法</h2>
           <p class="lead">身份证号和交易金额的脱敏目标并不一样：前者要挡住身份，后者要保住统计规律。算法选型从数据类型开始，而不是从工具箱开始。</p>
 
-          <h2 style="margin-top:48px;">三类数据，三种打法</h2>
+          <h2 style="margin-top:48px;">数据类型与处理方式</h2>
           <table class="data-table">
             <thead>
               <tr><th>数据类型</th><th>主要技术</th><th>怎么处理</th></tr>
@@ -146,7 +146,7 @@
             </div>
           </div>
 
-          <h2 style="margin-top:56px;">关键性能指标</h2>
+          <h2 style="margin-top:56px;">性能指标</h2>
           <div class="numbers">
             <div class="num"><b>95%+</b><span>敏感数据识别准确率</span></div>
             <div class="num"><b>1,000</b><span>脱敏处理速度（条/秒）</span></div>
@@ -155,7 +155,7 @@
           </div>
           <p class="table-note" style="margin-top:22px;">上述指标来自项目方案设定，随算法迭代持续优化：近期目标把脱敏处理性能提升至 5000 条/秒，数据合法性审查准确率提升至 98% 以上。</p>
 
-          <h2 style="margin-top:56px;">六种技术怎么选</h2>
+          <h2 style="margin-top:56px;">技术选型</h2>
           <table class="data-table">
             <thead>
               <tr><th>脱敏技术</th><th>数据可用性</th><th>安全强度</th><th>适用场景</th><th>实现复杂度</th><th>性能效率</th></tr>
@@ -171,7 +171,7 @@
           </table>
           <p class="table-note">表中评价为项目方案设定，用于说明技术取舍逻辑，不同数据规模下的实际性能以压测结果为准。</p>
 
-          <h2 style="margin-top:56px;">性能与安全的取舍</h2>
+          <h2 style="margin-top:56px;">取舍</h2>
           <div class="split">
             <div class="txt">
               <h3>实现复杂度决定落地成本</h3>
@@ -191,9 +191,9 @@
     <!-- 动态监测系统 -->
     <section class="part" id="monitoring">
       <div class="wrap">
-        <div class="part-label">监测系统<span>MONITORING</span></div>
+        <div class="part-label">监测系统</div>
         <div>
-          <h2>监测四层，从采集到预警</h2>
+          <h2>动态监测</h2>
           <p class="lead">监测系统的价值不在于记录一切，而在于从海量日志里挑出真正该报警的那几条，并且让处置动作赶在损失扩大之前。</p>
 
           <div class="roadmap">
@@ -215,7 +215,7 @@
             </div>
           </div>
 
-          <h2 style="margin-top:56px;">预置的风险场景规则</h2>
+          <h2 style="margin-top:56px;">风险场景规则</h2>
           <table class="data-table">
             <thead>
               <tr><th>场景</th><th>监测什么</th></tr>
@@ -255,9 +255,9 @@
     <!-- 数据安全保障 -->
     <section class="part paper" id="security">
       <div class="wrap">
-        <div class="part-label">数据安全<span>SECURITY</span></div>
+        <div class="part-label">数据安全</div>
         <div>
-          <h2>先把自己的数据管好</h2>
+          <h2>自身数据安全</h2>
           <p class="lead">客户把数据交给我们，意味着把一部分风险也交给了我们。传输、存储、权限、审计、应急，每一环都要能对外交代清楚。</p>
 
           <table class="data-table">
@@ -293,9 +293,9 @@
     <!-- 技术路线图 -->
     <section class="part" id="roadmap">
       <div class="wrap">
-        <div class="part-label">技术路线图<span>ROADMAP</span></div>
+        <div class="part-label">技术路线图</div>
         <div>
-          <h2>先做扎实，再做智能，最后做生态</h2>
+          <h2>技术路线</h2>
           <p class="lead">技术规划按三年分三步走，每一步都以可验证的指标收尾。对客户而言，这意味着服务不会停在当前的版本。</p>
 
           <div class="roadmap">
@@ -329,9 +329,9 @@
     <!-- 知识产权 -->
     <section class="part paper" id="ip">
       <div class="wrap">
-        <div class="part-label">知识产权<span>IP</span></div>
+        <div class="part-label">知识产权</div>
         <div>
-          <h2>技术要能保护，也要能证明</h2>
+          <h2>知识产权</h2>
           <p class="lead">专利、软件著作权与商标同步布局：既保护自研成果，也在合作洽谈、投标与融资时，成为可核验的技术凭证。</p>
 
           <table class="data-table">
@@ -381,7 +381,7 @@
     <section class="contact-band" id="contact">
       <div class="wrap">
         <div>
-          <h2>想看看这套技术在你的数据上怎么跑？</h2>
+          <h2>下一步</h2>
           <p>先做一次 3 分钟线上合规自测，了解自己在数据确权、个人信息处理与技术防护上的位置；也可以直接联系我们，安排一次技术方案说明。</p>
           <p style="margin-top:18px;"><a href="check.html" style="color:var(--brand);border-bottom:1px solid var(--brand);">开始免费自测 →</a></p>
         </div>
