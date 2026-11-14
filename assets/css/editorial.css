@@ -141,7 +141,7 @@ p { margin: 0 0 1em; }
   display: flex;
   align-items: flex-end;
   color: #fff;
-  background: #0e1a26 url("../img/hero-city.jpg") center 42% / cover no-repeat;
+  background: #0e1a26 url("../img/hero-city.webp") center 42% / cover no-repeat;
 }
 
 .hero::before {
@@ -245,14 +245,14 @@ p { margin: 0 0 1em; }
 
 .banner p { color: #c4d2de; font-size: 14.5px; max-width: 680px; margin: 0; }
 
-.banner.img-building { background-image: url("../img/banner-building.jpg"); }
-.banner.img-meeting { background-image: url("../img/img-lounge.jpg"); }
-.banner.img-docs { background-image: url("../img/img-audit.jpg"); }
-.banner.img-server { background-image: url("../img/img-corridor.jpg"); }
-.banner.img-office { background-image: url("../img/img-lounge.jpg"); }
-.banner.img-books { background-image: url("../img/img-books.jpg"); }
-.banner.img-gavel { background-image: url("../img/img-gavel.jpg"); }
-.banner.img-team { background-image: url("../img/img-books.jpg"); }
+.banner.img-building { background-image: url("../img/banner-building.webp"); }
+.banner.img-meeting { background-image: url("../img/img-lounge.webp"); }
+.banner.img-docs { background-image: url("../img/img-audit.webp"); }
+.banner.img-server { background-image: url("../img/img-corridor.webp"); }
+.banner.img-office { background-image: url("../img/img-lounge.webp"); }
+.banner.img-books { background-image: url("../img/img-books.webp"); }
+.banner.img-gavel { background-image: url("../img/img-gavel.webp"); }
+.banner.img-team { background-image: url("../img/img-books.webp"); }
 
 /* ---------- 通用分节 ---------- */
 .part { padding: 96px 0; border-bottom: 1px solid var(--line-2); }
