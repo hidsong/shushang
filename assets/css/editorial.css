@@ -248,9 +248,11 @@ p { margin: 0 0 1em; }
 .banner.img-building { background-image: url("../img/banner-building.jpg"); }
 .banner.img-meeting { background-image: url("../img/img-lounge.jpg"); }
 .banner.img-docs { background-image: url("../img/img-audit.jpg"); }
-.banner.img-server { background-image: url("../img/img-chip.jpg"); }
-.banner.img-office { background-image: url("../img/img-corridor.jpg"); }
-.banner.img-team { background-image: url("../img/img-team.jpg"); }
+.banner.img-server { background-image: url("../img/img-corridor.jpg"); }
+.banner.img-office { background-image: url("../img/img-lounge.jpg"); }
+.banner.img-books { background-image: url("../img/img-books.jpg"); }
+.banner.img-gavel { background-image: url("../img/img-gavel.jpg"); }
+.banner.img-team { background-image: url("../img/img-books.jpg"); }
 
 /* ---------- 通用分节 ---------- */
 .part { padding: 96px 0; border-bottom: 1px solid var(--line-2); }
