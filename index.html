@@ -1,438 +1,285 @@
 <!doctype html>
-<html lang="zh-CN" data-theme="light">
+<html lang="zh-CN">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>数商 · 中小企业数据合规服务</title>
   <meta name="description" content="数商是哈尔滨商业大学法学院与计算机与信息工程学院的学生创业项目，为中小企业提供数据合法性审查、数据脱敏、风险监测与应急处置服务。">
-  <script>
-    try {
-      var t = localStorage.getItem("shushang-theme");
-      document.documentElement.setAttribute("data-theme", t || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"));
-    } catch (e) {}
-  </script>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/editorial.css">
 </head>
 <body>
 
-  <header class="header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="数商首页">
-        <span class="brand-mark" aria-hidden="true">
+  <div class="util">
+    <div class="wrap">
+      <div class="left">
+        <span>哈尔滨商业大学 · 学生创业项目</span>
+        <span>2025 年 7 月立项</span>
+      </div>
+      <div class="right">试点阶段 · 尚未正式对外营业</div>
+    </div>
+  </div>
+
+  <header class="masthead">
+    <div class="wrap">
+      <a class="logo" href="index.html">
+        <span class="logo-mark">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
             <path d="M12 3 5 6v5.5c0 4.3 2.9 7.9 7 9.5 4.1-1.6 7-5.2 7-9.5V6l-7-3Z"/>
             <path d="M9.2 12.2l1.9 1.9 3.8-3.9"/>
           </svg>
         </span>
-        <span class="brand-text">数商<em>DATA COMPLIANCE</em></span>
+        <span>
+          <span class="logo-name">数商</span>
+          <span class="logo-sub">SHUSHANG · DATA COMPLIANCE</span>
+        </span>
       </a>
 
-      <nav class="nav" aria-label="主导航">
-        <a href="index.html">首页</a>
-        <a href="services.html">服务体系</a>
-        <a href="technology.html">技术方案</a>
+      <nav class="mainnav" id="mainnav">
+        <a href="index.html" class="active">首页</a>
+        <a href="services.html">业务领域</a>
+        <a href="technology.html">技术</a>
         <a href="check.html">合规自测</a>
-        <a href="about.html">关于我们</a>
-        <a href="contact.html">联系我们</a>
+        <a href="about.html">团队</a>
+        <a href="contact.html">联系</a>
       </nav>
 
-      <div class="header-actions">
-        <button class="icon-btn" type="button" data-theme-toggle aria-label="切换主题">
-          <svg class="theme-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
-            <circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>
-          </svg>
-          <svg class="theme-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a6.6 6.6 0 0 0 9.8 9.8Z"/>
-          </svg>
-        </button>
-        <a class="btn btn--primary btn--sm" href="check.html">免费自测</a>
-        <button class="icon-btn nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-label="打开菜单">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
-            <path d="M4 7h16M4 12h16M4 17h16"/>
-          </svg>
-        </button>
+      <div class="contact">
+        <strong><span class="ph">电话待填写</span></strong>
+        工作日上午 9:00 – 18:00
       </div>
+
+      <button class="nav-toggle" type="button" aria-label="打开菜单" aria-expanded="false" onclick="var n=document.getElementById('mainnav');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
     </div>
   </header>
 
   <main>
     <!-- 首屏 -->
     <section class="hero">
-      <div class="container hero-inner">
+      <div class="wrap">
         <div>
-          <span class="badge badge--teal" style="background:rgba(79,209,197,.12);border-color:rgba(79,209,197,.28);color:#7fe3da;">
-            哈尔滨商业大学 · 2025 年 7 月立项
-          </span>
-          <h1 class="mt-24">中小企业数据合规<br>从诊断到整改</h1>
-          <p class="hero-sub">
+          <span class="tag">面向年营收 500 万 – 5000 万的中小企业</span>
+          <h1>中小企业数据合规服务</h1>
+          <p class="intro">
             数商由哈尔滨商业大学法学院与计算机与信息工程学院 5 名本科生组成，2 位教师指导。
-            服务分三块：合规审查、数据脱敏、风险监测与应急处置。按年收费，每一项都有交付物。
+            我们做三件事：查清数据合规问题、处理敏感数据、盯着异常访问并处置。
+            服务按年收费，每一项都有明确的交付物和周期。
           </p>
-          <div class="hero-actions">
-            <a class="btn btn--primary btn--lg" href="check.html">
-              免费做一次合规自测
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </a>
-            <a class="btn btn--ghost-light btn--lg" href="services.html#pricing">看服务和价格</a>
-          </div>
-          <div class="hero-points">
-            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>5 名成员，跨两个学院</span>
-            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>2 位指导教师</span>
-            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>走访 200 多家企业</span>
+          <div class="links">
+            <a href="check.html">免费做一次合规自测 →</a>
+            <a class="plain" href="services.html">查看服务与价格</a>
           </div>
         </div>
 
-        <div class="hero-panel">
-          <div class="hero-panel-head">
-            <strong>项目现状</strong>
-            <span>截至 2025 年</span>
-          </div>
-          <div class="hero-metric">
-            <div class="metric">
-              <b>200<small>+</small></b>
-              <span>走访过的中小企业</span>
-            </div>
-            <div class="metric">
-              <b>80<small>+</small></b>
-              <span>深度访谈的企业负责人和法务</span>
-            </div>
-            <div class="metric">
-              <b>3<small>项</small></b>
-              <span>目前对外提供的服务</span>
-            </div>
-            <div class="metric">
-              <b>5<small>人</small></b>
-              <span>核心团队成员</span>
-            </div>
-          </div>
-          <div class="hero-panel-foot">
-            <span class="dot" aria-hidden="true"></span>
-            目前处于试点阶段，尚未正式对外营业
+        <div class="hero-facts">
+          <dl>
+            <dt>成立时间</dt><dd>2025 年 7 月</dd>
+            <dt>团队</dt><dd>5 名本科生，2 位指导教师</dd>
+            <dt>服务范围</dt><dd>合规审查 / 数据脱敏 / 风险监测与应急</dd>
+            <dt>目前阶段</dt><dd>试点，尚未正式对外营业</dd>
+          </dl>
+          <p class="note">本页价格与联系方式为占位信息，待团队确认后替换。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 业务领域 -->
+    <section class="part" id="areas">
+      <div class="wrap">
+        <div class="part-label">业务领域<span>SERVICES</span></div>
+        <div>
+          <h2>我们提供的三项服务</h2>
+          <p class="lead">可以单独采购，也可以打包成年费。价格按工作量计算，签约前提供书面报价和交付清单。</p>
+
+          <div class="areas">
+            <article class="area">
+              <span class="no">01</span>
+              <div>
+                <h3>数据合法性审查</h3>
+                <p>数据资产盘点、来源合法性、处理合规性、个人信息保护、数据出境，逐项审查，指出问题和整改办法。</p>
+                <a class="more" href="services.html#review">服务说明 →</a>
+              </div>
+              <div class="deliver">
+                <b>交付物</b>
+                审查报告（15–50 页）、问题清单、整改建议
+                <br><b>周期</b>
+                5–10 个工作日
+              </div>
+            </article>
+
+            <article class="area">
+              <span class="no">02</span>
+              <div>
+                <h3>数据脱敏</h3>
+                <p>身份证号、手机号、住址、银行卡号这类字段，按使用场景做掩码、泛化或加密，处理过程留日志。</p>
+                <a class="more" href="services.html#masking">服务说明 →</a>
+              </div>
+              <div class="deliver">
+                <b>交付物</b>
+                脱敏后的数据、字段清单、处理日志
+                <br><b>周期</b>
+                3–7 个工作日
+              </div>
+            </article>
+
+            <article class="area">
+              <span class="no">03</span>
+              <div>
+                <h3>风险监测与应急处置</h3>
+                <p>监测数据访问行为，批量导出、非工作时间访问等触发告警；发生事件时按预案隔离、取证、恢复。</p>
+                <a class="more" href="services.html#risk">服务说明 →</a>
+              </div>
+              <div class="deliver">
+                <b>交付物</b>
+                监测规则、告警通道、处置记录
+                <br><b>周期</b>
+                按月或按年
+              </div>
+            </article>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 服务对象 -->
-    <section class="section section--tight">
-      <div class="container">
-        <p class="text-sm text-muted center mb-0">服务对象：年营收 500 万到 5000 万的中小企业，集中在这些行业</p>
-        <div class="row" style="justify-content:center;gap:10px;margin-top:18px;">
-          <span class="badge badge--muted">电商零售</span>
-          <span class="badge badge--muted">制造业</span>
-          <span class="badge badge--muted">医疗健康</span>
-          <span class="badge badge--muted">教育培训</span>
-          <span class="badge badge--muted">金融服务</span>
-          <span class="badge badge--muted">物流供应链</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- 谁在做 -->
-    <section class="section section--alt">
-      <div class="container">
-        <div class="section-head">
-          <span class="eyebrow">团队</span>
+    <!-- 团队 -->
+    <section class="part" id="team">
+      <div class="wrap">
+        <div class="part-label">团队<span>TEAM</span></div>
+        <div>
           <h2>谁在做</h2>
-          <p class="lead">团队 5 人：法学院 4 人负责审查、法条和报告，计算机与信息工程学院 1 人负责脱敏和监测系统；指导教师 2 位，分别是法学方向和技术方向。</p>
-        </div>
-        <div class="grid grid--4">
-          <article class="card" data-reveal>
-            <div class="card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V4H6.5A2.5 2.5 0 0 0 4 6.5v13Z"/><path d="M8 7h8M8 11h6"/></svg>
-            </div>
-            <h3>法学组 · 4 人</h3>
-            <p>数据合法性审查、法条适配、合规报告撰写</p>
-          </article>
-          <article class="card" data-reveal>
-            <div class="card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 5 6v5.5c0 4.3 2.9 7.9 7 9.5 4.1-1.6 7-5.2 7-9.5V6l-7-3Z"/><path d="M9 12h6"/></svg>
-            </div>
-            <h3>技术组 · 1 人</h3>
-            <p>脱敏算法、监测系统、数据加密</p>
-          </article>
-          <article class="card" data-reveal>
-            <div class="card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.9"/></svg>
-            </div>
-            <h3>指导教师 · 2 位</h3>
-            <p>法学方向 1 位、技术方向 1 位，审核方案和报告</p>
-          </article>
-          <article class="card" data-reveal>
-            <div class="card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg>
-            </div>
-            <h3>2025 年 7 月立项</h3>
-            <p>依托哈尔滨商业大学法学院与计算机与信息工程学院</p>
-          </article>
-        </div>
-      </div>
-    </section>
+          <p class="lead">法学组负责条款判断、审查和报告，技术组负责脱敏工具和监测系统。两位指导教师分别把关法律和技术方案。</p>
 
-    <!-- 服务 -->
-    <section class="section">
-      <div class="container">
-        <div class="section-head">
-          <span class="eyebrow">服务</span>
-          <h2>提供哪些服务</h2>
-          <p class="lead">三项服务可以单买，也可以打包成年费。价格按工作量算，签约前给书面报价。</p>
-        </div>
-        <div class="grid grid--3">
-          <article class="card card--hover" data-reveal>
-            <span class="card-index">01</span>
-            <h3 class="mt-24">数据合法性审查</h3>
-            <p>数据资产盘点、来源合法性、处理合规性、个人信息保护、数据出境，逐项过一遍。</p>
-            <ul class="list-check mt-24">
-              <li>交付：审查报告（15–50 页）、问题清单、整改建议</li>
-              <li>周期：5–10 个工作日</li>
-            </ul>
-            <a class="card-link" href="services.html#review">服务说明
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </a>
-          </article>
-          <article class="card card--hover" data-reveal>
-            <span class="card-index">02</span>
-            <h3 class="mt-24">数据脱敏</h3>
-            <p>身份证号、手机号、住址、银行卡号这类字段，按用途做掩码、泛化或加密。</p>
-            <ul class="list-check mt-24">
-              <li>交付：脱敏后的数据、字段清单、处理日志</li>
-              <li>周期：3–7 个工作日</li>
-            </ul>
-            <a class="card-link" href="services.html#masking">服务说明
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </a>
-          </article>
-          <article class="card card--hover" data-reveal>
-            <span class="card-index">03</span>
-            <h3 class="mt-24">风险监测与应急处置</h3>
-            <p>看访问行为，批量导出、非工作时间访问这类异常触发告警；出事按预案处置。</p>
-            <ul class="list-check mt-24">
-              <li>交付：监测规则、告警通道、处置记录</li>
-              <li>周期：按月或按年</li>
-            </ul>
-            <a class="card-link" href="services.html#risk">服务说明
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- 价格 -->
-    <section class="section section--alt" id="pricing">
-      <div class="container">
-        <div class="section-head">
-          <span class="eyebrow">价格</span>
-          <h2>怎么收费</h2>
-          <p class="lead">按年订阅或按项目计费。下面的价格是占位，实际按企业规模和数据量调整。</p>
-        </div>
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th>方式</th>
-                <th>包含内容</th>
-                <th>适用</th>
-                <th>参考价</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><strong>基础订阅</strong></td>
-                <td>每年一次合规审查 + 风险监测</td>
-                <td>小微企业</td>
-                <td>¥ X,XXX / 年</td>
-              </tr>
-              <tr>
-                <td><strong>标准订阅</strong></td>
-                <td>审查 + 脱敏 + 监测 + 一次培训</td>
-                <td>小中型企业</td>
-                <td>¥ XX,XXX / 年</td>
-              </tr>
-              <tr>
-                <td><strong>专项服务</strong></td>
-                <td>单项审查、脱敏项目、出境评估</td>
-                <td>各类企业</td>
-                <td>¥ X,XXX 起 / 项</td>
-              </tr>
-              <tr>
-                <td><strong>培训</strong></td>
-                <td>法规解读、操作规范、案例讲解</td>
-                <td>各类企业</td>
-                <td>面议</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <p class="text-sm text-muted mt-24 mb-0">以上为占位价格，正式价格以服务合同为准。学生项目现阶段以试点合作为主。</p>
-      </div>
-    </section>
-
-    <!-- 流程 -->
-    <section class="section section--dark">
-      <div class="container">
-        <div class="section-head">
-          <span class="eyebrow" style="color:#7db0ff;">流程</span>
-          <h2>一次服务怎么走</h2>
-          <p class="lead">从第一次沟通到交付复查，四个环节，每个环节结束都有明确产出。</p>
-        </div>
-        <div class="steps">
-          <div class="step" data-reveal>
-            <span class="step-num">01</span>
-            <h3>沟通需求</h3>
-            <p>了解行业、数据规模、现在的做法和预算，判断能不能做。</p>
-          </div>
-          <div class="step" data-reveal>
-            <span class="step-num">02</span>
-            <h3>免费诊断</h3>
-            <p>给一份初步风险清单，说明问题在哪、大概要多少钱。</p>
-          </div>
-          <div class="step" data-reveal>
-            <span class="step-num">03</span>
-            <h3>方案与报价</h3>
-            <p>写清楚做什么、交付什么、多久交、多少钱，双方确认后开始。</p>
-          </div>
-          <div class="step" data-reveal>
-            <span class="step-num">04</span>
-            <h3>交付与复查</h3>
-            <p>交报告和处理结果，陪企业把整改做完，再复查一次。</p>
+          <div class="team">
+            <dl>
+              <dt>法学组 · 4 人</dt>
+              <dd>哈尔滨商业大学法学院 2025 级本科生，负责数据合法性审查、法条适配、合规报告撰写。</dd>
+              <dt>技术组 · 1 人</dt>
+              <dd>计算机与信息工程学院 2024 级本科生，负责脱敏算法、监测系统与数据加密。</dd>
+            </dl>
+            <dl>
+              <dt>指导教师 · 2 位</dt>
+              <dd>一位法学方向，负责法律框架与审查标准；一位技术方向，负责技术方案与算法设计。</dd>
+              <dt>协作方式</dt>
+              <dd>每个项目由法学成员与技术成员结对推进，审查结论和技术动作同步确认。</dd>
+            </dl>
           </div>
         </div>
       </div>
     </section>
 
     <!-- 调研 -->
-    <section class="section">
-      <div class="container">
-        <div class="section-head">
-          <span class="eyebrow">调研</span>
-          <h2>2025 年上半年走访的结果</h2>
-          <p class="lead">团队在哈尔滨及周边走访了 200 多家中小企业，和 80 多位企业负责人、法务聊过。下面是被提得最多的问题。</p>
-        </div>
-        <div class="stat-grid">
-          <div class="stat" data-reveal>
-            <b>75<em>%+</em></b>
-            <span>说不清哪些数据是自己的、哪些是用户的</span>
-          </div>
-          <div class="stat" data-reveal>
-            <b>80<em>%+</em></b>
-            <span>没有专职数据合规岗</span>
-          </div>
-          <div class="stat" data-reveal>
-            <b>75<em>%</em></b>
-            <span>脱敏只做简单的删除或替换</span>
-          </div>
-          <div class="stat" data-reveal>
-            <b>85<em>%</em></b>
-            <span>没有数据安全监测和预警手段</span>
-          </div>
-        </div>
-        <p class="text-sm text-muted mt-24 mb-0">数据来自项目团队 2025 年上半年的走访记录，样本 200 余家，集中在哈尔滨及周边。</p>
-      </div>
-    </section>
+    <section class="part" id="research">
+      <div class="wrap">
+        <div class="part-label">调研<span>RESEARCH</span></div>
+        <div>
+          <h2>2025 年上半年走访结果</h2>
+          <p class="lead">团队在哈尔滨及周边走访 200 多家中小企业，深度访谈 80 多位企业负责人和法务。以下是被提到最多的问题。</p>
 
-    <!-- 阶段 -->
-    <section class="section section--alt">
-      <div class="container">
-        <div class="section-head">
-          <span class="eyebrow">进度</span>
-          <h2>现在到哪一步</h2>
-        </div>
-        <div class="timeline">
-          <div class="timeline-item">
-            <span class="timeline-date">2025.07 — 2025.09</span>
-            <h3>立项，做产品原型</h3>
-            <p>审查清单、脱敏工具、监测系统框架搭起来，内部跑通。</p>
+          <div class="numbers">
+            <div class="num"><b>200+</b><span>走访过的中小企业</span></div>
+            <div class="num"><b>80+</b><span>深度访谈的负责人和法务</span></div>
+            <div class="num"><b>75%</b><span>说不清数据权属和敏感字段分布</span></div>
+            <div class="num"><b>85%</b><span>没有数据安全监测和预警手段</span></div>
           </div>
-          <div class="timeline-item">
-            <span class="timeline-date">2025.10 — 2025.12</span>
-            <h3>找试点企业</h3>
-            <p>计划签 5 到 10 家哈尔滨本地企业做试点，按试点反馈改流程。</p>
-          </div>
-          <div class="timeline-item">
-            <span class="timeline-date">2026.01 — 2026.06</span>
-            <h3>服务标准化</h3>
-            <p>把审查、脱敏、监测三块写成固定流程和交付模板。</p>
-          </div>
-          <div class="timeline-item">
-            <span class="timeline-date">2026.07 — 2026.12</span>
-            <h3>扩大服务范围</h3>
-            <p>计划服务到 50 家企业，往哈尔滨周边和省内其他城市走。</p>
-          </div>
+          <p style="font-size:12.5px;color:var(--muted);margin-top:22px;">样本 200 余家，集中在哈尔滨及周边，数据来自项目团队走访记录。</p>
         </div>
       </div>
     </section>
 
-    <!-- 自测 CTA -->
-    <section class="section section--tight">
-      <div class="container">
-        <div class="cta-band" data-reveal>
-          <div class="row" style="justify-content:space-between;align-items:flex-start;gap:32px;">
-            <div style="max-width:600px;">
-              <span class="badge" style="background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.2);color:#bfe0ff;">3 分钟 · 免费 · 不上传</span>
-              <h2 class="mt-24">先自己查一遍</h2>
-              <p>12 个问题，覆盖数据确权、个人信息、技术防护、制度应急。答完给一份按优先级排的清单，不填联系方式也能看结果。</p>
+    <!-- 进展 -->
+    <section class="part" id="roadmap">
+      <div class="wrap">
+        <div class="part-label">进展<span>ROADMAP</span></div>
+        <div>
+          <h2>项目进度</h2>
+          <p class="lead">目前处在试点准备阶段。下面是计划中的时间安排，实际进度会随合作情况调整。</p>
+
+          <div class="roadmap">
+            <div class="step">
+              <time>2025.07 – 2025.09</time>
+              <div>
+                <h3>立项，完成产品原型</h3>
+                <p>审查清单、脱敏工具、监测系统框架搭建完成，内部跑通。</p>
+              </div>
             </div>
-            <div class="row" style="padding-top:6px;">
-              <a class="btn btn--light btn--lg" href="check.html">开始自测</a>
+            <div class="step">
+              <time>2025.10 – 2025.12</time>
+              <div>
+                <h3>首批试点企业</h3>
+                <p>计划与 5 到 10 家哈尔滨本地企业签约，按试点反馈调整流程。</p>
+              </div>
+            </div>
+            <div class="step">
+              <time>2026.01 – 2026.06</time>
+              <div>
+                <h3>服务标准化</h3>
+                <p>把审查、脱敏、监测三块写成固定流程和交付模板。</p>
+              </div>
+            </div>
+            <div class="step">
+              <time>2026.07 – 2026.12</time>
+              <div>
+                <h3>扩大服务范围</h3>
+                <p>计划服务 50 家企业，向哈尔滨周边和省内其他城市扩展。</p>
+              </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 联系 -->
+    <section class="contact-band" id="contact">
+      <div class="wrap">
+        <div>
+          <h2>合作与咨询</h2>
+          <p>如果你的企业在哈尔滨及周边，年营收在 500 万到 5000 万之间，可以先做一次免费自测，或者把需求发给我们。</p>
+          <p><a href="check.html" style="color:var(--brand);border-bottom:1px solid var(--brand);">开始免费自测 →</a></p>
+        </div>
+        <div class="contact-list">
+          <div><span>邮箱</span><span><span class="ph">待填写</span></span></div>
+          <div><span>电话</span><span><span class="ph">待填写</span></span></div>
+          <div><span>地址</span><span>哈尔滨市松北区 · 哈尔滨商业大学</span></div>
+          <div><span>工作时间</span><span>周一至周五 9:00 – 18:00</span></div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <a class="brand" href="index.html">
-            <span class="brand-mark" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 3 5 6v5.5c0 4.3 2.9 7.9 7 9.5 4.1-1.6 7-5.2 7-9.5V6l-7-3Z"/>
-                <path d="M9.2 12.2l1.9 1.9 3.8-3.9"/>
-              </svg>
-            </span>
-            <span class="brand-text">数商<em>DATA COMPLIANCE</em></span>
-          </a>
-          <p class="footer-desc">哈尔滨商业大学法学院与计算机与信息工程学院学生创业项目，为中小企业做数据合规审查、脱敏、监测和应急处置。</p>
-          <span class="badge badge--muted" style="background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.14);color:#9fb3cf;">学生项目 · 试点阶段</span>
-        </div>
-        <div>
-          <h4>服务</h4>
-          <div class="footer-links">
-            <a href="services.html#review">数据合法性审查</a>
-            <a href="services.html#masking">数据脱敏</a>
-            <a href="services.html#risk">风险监测与应急处置</a>
-            <a href="services.html#pricing">价格</a>
-          </div>
-        </div>
-        <div>
-          <h4>关于</h4>
-          <div class="footer-links">
-            <a href="about.html">关于我们</a>
-            <a href="technology.html">技术方案</a>
-            <a href="check.html">合规自测</a>
-            <a href="contact.html">联系我们</a>
-          </div>
-        </div>
-        <div>
-          <h4>联系</h4>
-          <div class="footer-links">
-            <span>邮箱：<span class="placeholder">待填写</span></span>
-            <span>电话：<span class="placeholder">待填写</span></span>
-            <span>地址：哈尔滨市 · 哈尔滨商业大学</span>
-          </div>
-        </div>
+  <footer class="foot">
+    <div class="wrap">
+      <div>
+        <div class="brandline">数商 · 中小企业数据合规服务</div>
+        <p style="max-width:300px;">哈尔滨商业大学法学院与计算机与信息工程学院学生创业项目。</p>
       </div>
-      <div class="footer-bottom">
-        <span>© <span data-year>2026</span> 数商 · 哈尔滨商业大学</span>
-        <span>备案号：<span class="placeholder">待备案</span></span>
+      <div class="col">
+        <h4>服务</h4>
+        <a href="services.html#review">数据合法性审查</a>
+        <a href="services.html#masking">数据脱敏</a>
+        <a href="services.html#risk">风险监测与应急</a>
+        <a href="services.html#pricing">价格</a>
       </div>
+      <div class="col">
+        <h4>关于</h4>
+        <a href="about.html">团队</a>
+        <a href="technology.html">技术</a>
+        <a href="check.html">合规自测</a>
+        <a href="contact.html">联系</a>
+      </div>
+      <div class="col">
+        <h4>联系</h4>
+        <span>邮箱：<span class="ph">待填写</span></span>
+        <span>电话：<span class="ph">待填写</span></span>
+        <span>哈尔滨市松北区</span>
+      </div>
+    </div>
+    <div class="wrap bottom">
+      <span>© 2026 数商 · 哈尔滨商业大学</span>
+      <span>备案号：<span class="ph">待备案</span></span>
     </div>
   </footer>
 
-  <script src="assets/js/main.js" defer></script>
 </body>
 </html>
